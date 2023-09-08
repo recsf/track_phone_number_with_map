@@ -7,7 +7,7 @@ from opencage.geocoder import OpenCageGeocode
 number = input("Enter the phone number with country code: ")
 phoneNumber = phonenumbers.parse(number)
 
-Key = "11a812201ba34dca8d6f30823386029f"
+Key = "" # Get the key from Geocoding API
 geolocation = geocoder.description_for_number(phoneNumber, "en")
 print("location: " + geolocation)
 
